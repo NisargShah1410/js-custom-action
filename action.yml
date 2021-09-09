@@ -1,7 +1,7 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  language-name: 
+  language: 
     description: 'Which language do you want to select'
     required: true
     default: 'dotnet'
