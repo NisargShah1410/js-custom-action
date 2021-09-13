@@ -3,7 +3,7 @@ const github = require('@actions/github');
 
 try {
   const lang = core.getInput('language-name');
-  console.log('Language selected is ${lang}');
+  console.log('Language selected is ' + lang +');
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
