@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Build
         id: build
-        uses: NisargShah1410/js-custom-action@v1.1
+        uses: actions/js-custom-action@v1.1
         with:
           language-name: 'dotnet'
         
