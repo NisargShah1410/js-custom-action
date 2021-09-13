@@ -2,8 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  //const lang = core.getInput('language-name');
-  var lang = "dotnet"
+  const lang = core.getInput('language-name');
   console.log('Language selected is ${lang}');
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
