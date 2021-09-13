@@ -8,8 +8,8 @@ jobs:
       - name: Build
         id: build
         uses: NisargShah1410/js-custom-action@v1.2
-        with:
-          language-name: 'python'
+        #with:
+         # language-name: 'python'
         
         
       # Use the output from the `hello` step
