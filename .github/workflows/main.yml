@@ -10,7 +10,9 @@ jobs:
         uses: NisargShah1410/js-custom-action@v1.2
         with:
           language-name: 'python'
-        
+      
+      - name: run the build command
+        run: ${{ steps.build.outputs.com}}
         
       # Use the output from the `hello` step
       - name: Get the output time
