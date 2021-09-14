@@ -4,7 +4,7 @@ const github = require('@actions/github');
 try {
   const lang = core.getInput('language-name');
   console.log(`Language selected is ${lang}`);
-  const com = `${lang} build`
+  const com = `${lang} build`.toString();
   core.setOutput("com", com);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
