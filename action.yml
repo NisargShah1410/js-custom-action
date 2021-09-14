@@ -5,9 +5,15 @@ inputs:
     description: 'Which language do you want to select'
     required: true
     default: 'dotnet'
+  command-to-run:
+    description: 'using Command we have to run'
+    required: true
+    default: ${{ steps.build.outputs.com}}
 outputs:
   time: # id of output
     description: 'The time we greeted you'
+  com:
+    description: 'making Command we have to run'
 runs:
   using: 'node12'
   main: 'index.js'
