@@ -1,19 +1,13 @@
-name: 'Hello to the new js custom action'
+name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  language-name: 
-    description: 'Which language do you want to select'
+  who-to-greet:  # id of input
+    description: 'Who to greet'
     required: true
-    default: 'dotnet'
-  command-to-run:
-    description: 'using Command we have to run'
-    required: true
-    default: ${{ steps.build.outputs.com}}
+    default: 'World'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-  com:
-    description: 'making Command we have to run'
 runs:
   using: 'node12'
   main: 'index.js'
